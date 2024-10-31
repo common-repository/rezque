@@ -1,0 +1,211 @@
+#page {
+  margin: 20px 0;
+}
+
+#rezque {
+	margin: 0px auto;
+	text-align: center;
+}
+
+@media (min-width: 992px) {
+  #rezque .col-6 {
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 80%;
+  }
+}
+
+#rezque .row:before, .row:after {
+    content: " ";
+    display: table;
+}
+
+#rezque .row:after {
+    clear: both;
+}
+#rezque .notices {
+  color:red;
+  font-size: 10px;
+}
+#rezque fieldset {
+	margin-top: 7px;
+	background: white;
+	padding: 5%;
+}
+/*Hide all except first fieldset*/
+#rezque fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#rezque input[type="text"],
+#rezque input[type="email"],
+#rezque input[type="tel"]{
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+  padding: 0.375em;
+}
+#rezque #name {
+  float:left;
+}
+#rezque #email {
+  float:right;
+}
+#rezque #phone {
+  clear:both;
+}
+#rezque #name,
+#rezque #email{
+  width: 49% !important;
+}
+/*buttons*/
+#rezque .submit-button,
+#rezque .action-button {
+	width: 30%;
+	background: #e1e1e1;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+#rezque .action-button:hover, #rezque .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #e1e1e1;
+}
+
+#rezque .submit-button {
+  width: 60% !important;
+  background: #ef4035;
+}
+
+#rezque .submit-button:hover, #rezque .submit-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #ef4035;
+}
+/*headings*/
+.fs-title {
+	font-size: 15px !important;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px !important;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+.btn-group, .btn-group-vertical {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.btn-group-vertical>.btn, .btn-group-vertical>.btn-group, .btn-group-vertical>.btn-group>.btn {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+}
+
+.btn-group-vertical>.btn, .btn-group>.btn {
+  position: relative;
+  float: left;
+}
+
+[data-toggle=buttons]>.btn input[type=checkbox], [data-toggle=buttons]>.btn input[type=radio], [data-toggle=buttons]>.btn-group>.btn input[type=checkbox], [data-toggle=buttons]>.btn-group>.btn input[type=radio] {
+  position: absolute;
+  clip: rect(0,0,0,0);
+  pointer-events: none;
+}
+
+.btn-group-vertical>.btn, .btn-group-vertical>.btn-group, .btn-group-vertical>.btn-group>.btn {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+}
+
+.btn {
+  border-radius: 0;
+  padding: 12px 18px;
+  font-weight: 900;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.dropdown-toggle.btn-default {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+#ajaxloader {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border: 8px solid #fff;
+	border-right-color: transparent;
+	border-radius: 50%;
+	box-shadow: 0 0 25px 2px #eee;
+	animation: spin 1s linear infinite;
+
+}
+
+@keyframes spin {
+	from { transform: rotate(0deg);   opacity: 0.2; }
+	50%  { transform: rotate(180deg); opacity: 1.0; }
+	to   { transform: rotate(360deg); opacity: 0.2; }
+}
